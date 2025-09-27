@@ -1,0 +1,81 @@
+MetLife ProHealth AI: Platform Overview & Features:
+
+
+What is MetLife ProHealth AI?
+MetLife ProHealth AI is an innovative, AI-powered health risk assessment and proactive wellness platform designed specifically for employees. Our mission is to help you stay healthier by predicting potential health risks before they become serious issues, and providing personalized guidance to improve your well-being.
+
+How It Works: A Simple Overview
+
+You Share Your Health Data (securely and anonymously).
+
+Our AI Analyzes the Data to assess your unique health risks.
+
+You Receive a Personalized Health Plan with actionable steps.
+
+We Support Your Journey with reminders, tips, and incentives.
+
+Core Features and Capabilities
+1. Smart Health Dashboard
+Upon logging in, you'll see your personalized health dashboard. This is your central hub, displaying:
+
+Your Health Age: An easy-to-understand metric comparing your biological age to your chronological age.
+
+Risk Scores: Visual indicators showing your predicted risk levels for conditions like heart disease, diabetes, and respiratory issues.
+
+Weekly Wellness Score: A score that tracks your progress based on activity, sleep, and nutrition.
+
+Action Items: A clear list of recommended actions for the week (e.g., "Complete a 30-minute walk," "Schedule a blood pressure check").
+
+2. The AI Health Risk Assessment
+This is the core of our platform. When you input your data, our advanced machine learning models analyze it to generate insights. The system considers:
+
+Biometric Data: Age, weight, height, blood pressure, cholesterol levels (from health screenings or manual input).
+
+Lifestyle Information: Diet habits, smoking status, alcohol consumption, stress levels, and sleep patterns (from quick questionnaires).
+
+Wearable Device Integration: Syncs with Apple Health, Google Fit, Fitbit, and Garmin to pull in real-time data like step count, heart rate, and sleep quality.
+
+Historical Data: (Anonymized and aggregated) trends from previous health claims to identify patterns.
+
+Example Prediction & Suggestion:
+
+Scenario: The AI notices a user has high-stress job, slightly elevated blood pressure, and a sedentary pattern from their wearable device.
+
+Prediction: "Moderate 5-year risk of developing hypertension."
+
+Personalized Suggestions:
+
+"Try a 10-minute guided breathing exercise after work to lower stress."
+
+"Aim for an extra 2,000 steps per day. Try a walking meeting."
+
+"Consider reducing sodium intake. Here are three low-salt recipes for dinner."
+
+"Reminder: It's been 6 months since your last blood pressure check. Click here to find a local clinic."
+
+3. Your Personalized Action Plan
+The platform doesn't just identify risks—it gives you a clear path forward. Your action plan includes:
+
+Preventive Care Schedule: Automated reminders for health screenings, vaccinations, and doctor's appointments based on your age, gender, and risk profile.
+
+Micro-Wellness Goals: Small, achievable daily or weekly goals, like "Drink 6 glasses of water today" or "Take a 5-minute stretch break every 2 hours."
+
+Curated Wellness Content: Articles, videos, and podcasts about nutrition, exercise, and mental health that are relevant to your specific goals.
+
+4. Engagement & Gamification
+We make staying healthy rewarding and fun:
+
+Points & Badges: Earn points for completing health assessments, logging activities, and hitting goals. Unlock badges for streaks and achievements (e.g., "Sleep Champion," "Weekend Warrior").
+
+Wellness Challenges: Join team-based challenges with your colleagues, like a "Step Challenge" to foster friendly competition and social support.
+
+Incentives Integration: Your healthy behaviors can translate into real-world rewards, such as discounts on insurance premiums, gift cards, or contributions to your Health Savings Account (HSA), all managed through your employee benefits platform.
+
+5. Our Unwavering Commitment to Your Privacy
+Your health data is sensitive, and we protect it with the highest standards.
+
+Data Anonymization: Your personal identity is removed from the data used for AI analysis.
+
+Full Compliance: We are fully compliant with HIPAA and GDPR regulations. Your data is never sold.
+
+You Are in Control: You can view, manage, and control what data you share through simple privacy settings.
