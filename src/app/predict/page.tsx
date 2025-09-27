@@ -1,8 +1,8 @@
 import "tailwindcss"
 
 import bgImage from "../../../public/assets/bg.jpg"
-import NavbarMenu from "../components/NavBar"
-import { Cardbots } from "../components/Card"
+import NavbarMenu from "@/components/Navigation/NavBar"
+import { Cardbots } from "@/components/Card/Card"
 
 export default function Predict() {
    return (

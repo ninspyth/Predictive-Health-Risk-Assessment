@@ -5,8 +5,10 @@ import * as React from "react"
 import "tailwindcss"
 
 import bgImage from "../../public/assets/bg.jpg"
-import NavbarMenu from "./components/NavBar"
+// import NavbarMenu from "./components/NavBar"
+
 import Chat from "@/components/Chat/Chat"
+import NavbarMenu from "@/components/Navigation/NavBar"
 
 export default function Home() {
   return (
