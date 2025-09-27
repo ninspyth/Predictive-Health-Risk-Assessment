@@ -1,8 +1,5 @@
 import { UserRegistrationForm } from "@/components/Authentication/user-registration-form";
 import Loader from "@/components/Loader/loader";
-import { Button } from "@/components/ui/button";
-// import Loader from "@/components/Loader/loader";
-// import { Button } from "@/components/ui/button";
 import { Suspense } from "react";
 
 export default function LoginPage() {

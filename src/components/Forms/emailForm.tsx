@@ -8,14 +8,13 @@ import { userEmailSchema } from "@/lib/validations/auth";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
 
 type FormData = z.infer<typeof userEmailSchema>;
 
 interface EmailFormProps {
   user: { email: string };
   isLoading: boolean;
-  sendVerification: any;
+  sendVerification: unknown;
 }
 
 const EmailForm = ({ user, isLoading, sendVerification }: EmailFormProps) => {
