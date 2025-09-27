@@ -4,6 +4,8 @@ import * as React from "react";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import { Progress } from "../ui/progress";
 import { EmailForm, VerifyCodeForm } from "@/components/Forms/index";
+import { signIn } from "next-auth/react";
+import { useRouter, useSearchParams } from "next/navigation";
 const userSchema = {
   email: "",
 };
@@ -14,8 +16,11 @@ export function UserRegistrationForm() {
   const [code, setCode] = React.useState("");
   const [expiry, setExpiry] = React.useState(Date.now());
   const [loading, setIsLoading] = React.useState(false);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get("callbackUrl") || "/";
 
-  const verifyCode = (verificationCode: string) => {
+  const verifyCode = async (verificationCode: string) => {
     const currentTime = Date.now();
     if (currentTime > expiry) {
       alert(
@@ -25,7 +30,20 @@ export function UserRegistrationForm() {
     }
 
     if (code == verificationCode) {
-      setPage(3);
+      try {
+        const signInResult = await signIn("credentials", {
+          email: user.email,
+          callbackUrl,
+        });
+
+        if (signInResult?.ok && signInResult.url) {
+          router.push(signInResult.url || "/");
+        } else {
+          alert("Unable to login");
+        }
+      } catch (error) {
+        console.log("Error during sign-in:", error);
+      }
     } else {
       alert("Incorrect code.Please try again.");
     }
@@ -58,7 +76,6 @@ export function UserRegistrationForm() {
       alert("Verification failed. Failed to send verification.");
       console.log(JSON.stringify(error));
     } finally {
-      // setPage(2);
       setIsLoading(false);
     }
   };
@@ -77,14 +94,12 @@ export function UserRegistrationForm() {
             sendVerification={sendVerification}
             isLoading={loading}
           />
-        ) : page == 2 ? (
+        ) : (
           <VerifyCodeForm
             user={user}
             setPage={setPage}
             verifyCode={verifyCode}
           />
-        ) : (
-          <>Verication Done</>
         )}
       </CardContent>
     </Card>
