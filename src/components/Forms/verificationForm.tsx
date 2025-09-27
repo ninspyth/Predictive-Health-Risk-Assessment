@@ -17,9 +17,9 @@ import { verificationCodeSchema } from "@/lib/validations/auth";
 type FormData = z.infer<typeof verificationCodeSchema>;
 
 interface VerifyCodeFormProps {
-  user: unknown;
-  verifyCode: unknown;
-  setPage: unknown;
+  user: { email: string };
+  verifyCode: (verificationCode: string) => void;
+  setPage: (page: number) => void;
 }
 
 const VerifyCodeForm = ({ user, setPage, verifyCode }: VerifyCodeFormProps) => {

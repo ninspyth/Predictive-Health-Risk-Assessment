@@ -14,7 +14,7 @@ type FormData = z.infer<typeof userEmailSchema>;
 interface EmailFormProps {
   user: { email: string };
   isLoading: boolean;
-  sendVerification: unknown;
+  sendVerification: (email: string) => void;
 }
 
 const EmailForm = ({ user, isLoading, sendVerification }: EmailFormProps) => {
