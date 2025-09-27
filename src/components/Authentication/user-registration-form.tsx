@@ -4,6 +4,7 @@ import * as React from "react";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import { Progress } from "../ui/progress";
 import { EmailForm, VerifyCodeForm } from "@/components/Forms/index";
+import { useRouter } from "next/navigation";
 const userSchema = {
   email: "",
 };
@@ -14,6 +15,7 @@ export function UserRegistrationForm() {
   const [code, setCode] = React.useState("");
   const [expiry, setExpiry] = React.useState(Date.now());
   const [loading, setIsLoading] = React.useState(false);
+  const router = useRouter();
 
   const verifyCode = (verificationCode: string) => {
     const currentTime = Date.now();
@@ -25,7 +27,8 @@ export function UserRegistrationForm() {
     }
 
     if (code == verificationCode) {
-      setPage(3);
+      localStorage.setItem("email", user.email);
+      router.push("/");
     } else {
       alert("Incorrect code.Please try again.");
     }
@@ -58,7 +61,6 @@ export function UserRegistrationForm() {
       alert("Verification failed. Failed to send verification.");
       console.log(JSON.stringify(error));
     } finally {
-      // setPage(2);
       setIsLoading(false);
     }
   };

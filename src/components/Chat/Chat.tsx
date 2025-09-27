@@ -58,13 +58,7 @@ const Chat = () => {
           {isLoading && (
             <li className="flex flex-row max-h-8">
               <div className="rounded-t-lg rounded-r-lg p-1 shadow-md flex flex-col max-w-3/4">
-                <div className="flex gap-1 items-center h-8 w-fit">
-                  <div className="w-1 h-full bg-foreground animate-wave [animation-delay:0s]"></div>
-                  <div className="w-1 h-full bg-foreground animate-wave [animation-delay:0.1s]"></div>
-                  <div className="w-1 h-full bg-foreground animate-wave [animation-delay:0.2s]"></div>
-                  <div className="w-1 h-full bg-foreground animate-wave [animation-delay:0.3s]"></div>
-                  <div className="w-1 h-full bg-foreground animate-wave [animation-delay:0.4s]"></div>
-                </div>
+                <div className="animate-pulse">Loading...</div>
               </div>
             </li>
           )}
