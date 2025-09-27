@@ -39,7 +39,8 @@ export default function Home() {
           backgroundImage: `url(${bgImage.src})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "fixed",
           width: "100vw",
           height: "100vh",
         }}
